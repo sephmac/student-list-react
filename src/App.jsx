@@ -118,7 +118,7 @@ const App = () => {
   return (
     <div className="app-container">
       <div className="app-content">
-        <h1 className="app-title">Student List Manager</h1>
+        <h1 className="app-title">Student Dashboard</h1>
 
         <div className="control-grid">
           <div className="card">
