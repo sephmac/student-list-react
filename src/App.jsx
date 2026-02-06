@@ -29,6 +29,7 @@ const classifyScore = (score) => {
 const Student = ({ id, name, score, onLog, onRemove }) => {
   const category = classifyScore(score);
   const isExcellent = score >= 90;
+  const isTopScore = score >= 95;
 
   return (
     <div className="student-card">
@@ -40,6 +41,7 @@ const Student = ({ id, name, score, onLog, onRemove }) => {
             Category: <span className="category-text">{category}</span>
           </p>
           {isExcellent && <p className="excellent-badge">⭐ Excellent!</p>}
+          {isTopScore && <p className="top-performer-badge">🏆 Top Performer</p>}
         </div>
         <div className="student-actions">
           <button onClick={() => onLog(name)} className="btn-log">
